@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">伴米旅行</string>
+    <string name="splash_item1_leftText">严选当地人的</string>
+    <string name="splash_item1_rightText">私藏线路</string>
+    <string name="splash_item2_leftText">智能语音</string>
+    <string name="splash_item2_rightText">实时导览</string>
+    <string name="splash_item3_leftText">智能地图</string>
+    <string name="splash_item3_rightText">为你指路</string>
+    <string name="splash_immediately">立即体验</string>
 </resources>

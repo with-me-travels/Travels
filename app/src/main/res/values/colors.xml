@@ -3,4 +3,13 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="splash_leftColor">#78d9ff</color>
+    <color name="splash_rightColor">#fa6a13</color>
+    <color name="splash_pager_select">#f96a14</color>
+    <color name="splash_pager_unselect">#e0e0e0</color>
+    <color name="textColor">#ffffff</color>
+    <color name="c_ff9d53">#ff9d53</color>
+    <color name="c_fa6a13">#fa6a13</color>
+    <color name="colorWhite">#ffffff</color>
 </resources>
