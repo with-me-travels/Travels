@@ -1,5 +1,6 @@
 package com.wjx.travelwithm_master.base;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -38,6 +39,14 @@ public abstract class SimpleActivity extends AppCompatActivity {
     }
 
     protected abstract int createLayout();
+
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
 
     @Override
     protected void onDestroy() {

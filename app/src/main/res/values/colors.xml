@@ -5,11 +5,18 @@
     <color name="colorAccent">#D81B60</color>
 
     <color name="splash_leftColor">#78d9ff</color>
-    <color name="splash_rightColor">#fa6a13</color>
+        <color name="splash_rightColor">#fa6a13</color>
     <color name="splash_pager_select">#f96a14</color>
     <color name="splash_pager_unselect">#e0e0e0</color>
     <color name="textColor">#ffffff</color>
     <color name="c_ff9d53">#ff9d53</color>
     <color name="c_fa6a13">#fa6a13</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="c_373737">#373737</color>
+    <color name="c_636363">#636363</color>
+    <color name="c_c8c8c8">#c8c8c8</color>
+    <color name="c_a9a9a9">#a9a9a9</color>
+    <color name="c_fefefe">#fefefe</color>
+    <color name="c_4dAe46">#4DAE46</color>
+    <color name="c_eaeaea">#eaeaea</color>
 </resources>

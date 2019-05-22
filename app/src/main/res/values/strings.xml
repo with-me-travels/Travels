@@ -7,4 +7,13 @@
     <string name="splash_item3_leftText">智能地图</string>
     <string name="splash_item3_rightText">为你指路</string>
     <string name="splash_immediately">立即体验</string>
+    <string name="for_more_service">你好，为了获取更好的服务</string>
+    <string name="login_app">请登录伴米旅行</string>
+    <string name="contry_code">+86</string>
+    <string name="input_phone">请输入手机号码</string>
+    <string name="or">or</string>
+    <string name="send_verify">发送验证码</string>
+    <string name="agree_protocol">登录或注册即同意伴米旅行</string>
+    <string name="agree_user">用户协议</string>
+    <string name="login_wechat">微信登录</string>
 </resources>
