@@ -9,6 +9,7 @@
     <color name="splash_pager_select">#f96a14</color>
     <color name="splash_pager_unselect">#e0e0e0</color>
     <color name="textColor">#ffffff</color>
+    <color name="textColorB">#333333</color>
     <color name="c_ff9d53">#ff9d53</color>
     <color name="c_fa6a13">#fa6a13</color>
     <color name="colorWhite">#ffffff</color>
@@ -19,4 +20,5 @@
     <color name="c_fefefe">#fefefe</color>
     <color name="c_4dAe46">#4DAE46</color>
     <color name="c_eaeaea">#eaeaea</color>
+    <color name="f0f0f0">#f0f0f0</color>
 </resources>

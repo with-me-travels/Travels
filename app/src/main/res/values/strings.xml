@@ -16,4 +16,18 @@
     <string name="agree_protocol">登录或注册即同意伴米旅行</string>
     <string name="agree_user">用户协议</string>
     <string name="login_wechat">微信登录</string>
+    <string name="heard_name_demo">林小姐</string>
+    <string name="heard_info_demo">四体不勤五谷不分人懒馋嘴花痴健忘</string>
+    <string name="heard_bianji">编辑</string>
+    <string name="heard_Mybag">我的钱包</string>
+    <string name="nine">99</string>
+    <string name="yuan">元</string>
+    <string name="win">赢取奖金</string>
+    <string name="my_kanquan">我的卡劵</string>
+    <string name="my_yigo">已购行程</string>
+    <string name="my_shoucang">我的收藏</string>
+    <string name="my_guanzhu">我的关注</string>
+    <string name="kefu">联系客服</string>
+    <string name="fankui">意见反馈</string>
+    <string name="banben">版本检查</string>
 </resources>
