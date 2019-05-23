@@ -19,4 +19,5 @@
     <color name="c_fefefe">#fefefe</color>
     <color name="c_4dAe46">#4DAE46</color>
     <color name="c_eaeaea">#eaeaea</color>
+    <color name="verify_bg">#00ffffff</color>
 </resources>
