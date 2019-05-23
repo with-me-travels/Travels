@@ -163,7 +163,6 @@ public class MainActivity extends SimpleActivity {
 //                ToastUtil.showShort("这是一个头像哦！！");
                 break;
             case R.id.main_letter_box:
-//                ToastUtil.showShort("1111111");
                 Intent intent = new Intent(MainActivity.this,MailboxActivity.class);
                 startActivity(intent);
                 break;
