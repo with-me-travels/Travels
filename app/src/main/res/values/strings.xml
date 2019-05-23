@@ -23,4 +23,42 @@
     <string name="verify_send">重新发送</string>
     <string name="login_success">登录成功</string>
     <string name="verify_error">登录失败</string>
+    <string name="home_page">首页</string>
+    <string name="with_m">伴米</string>
+    <string name="letter_box">信箱</string>
+    <string name="heard_name_demo">林小姐</string>
+    <string name="heard_info_demo">四体不勤五谷不分人懒馋嘴花痴健忘</string>
+    <string name="heard_bianji">编辑</string>
+    <string name="heard_Mybag">我的钱包</string>
+    <string name="nine">99</string>
+    <string name="yuan">元</string>
+    <string name="win">赢取奖金</string>
+    <string name="my_kanquan">我的卡劵</string>
+    <string name="my_yigo">已购行程</string>
+    <string name="my_shoucang">我的收藏</string>
+    <string name="my_guanzhu">我的关注</string>
+    <string name="kefu">联系客服</string>
+    <string name="fankui">意见反馈</string>
+    <string name="banben">版本检查</string>
+    <string name="presonal_toolBar_text">个人信息</string>
+    <string name="presonal_get">获取途径</string>
+    <string name="baomi">保密</string>
+    <string name="my_changes">修改密码</string>
+    <string name="my_setPhone">绑定手机</string>
+    <string name="un_login">退出登陆</string>
+    <string name="my_img_heard">头像</string>
+    <string name="my_name">用户昵称</string>
+    <string name="my_sex">性别</string>
+    <string name="my_info">个性签名</string>
+    <string name="setting_name">修改名称</string>
+    <string name="ok">完成</string>
+    <string name="num">/27</string>
+    <string name="zero">0</string>
+    <string name="heard_no_name">未登录</string>
+    <string name="heard_no_info">快来登陆设置你的个性签名吧</string>
+    <string name="setting_info">个性签名</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
