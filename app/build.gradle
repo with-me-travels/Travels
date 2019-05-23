@@ -67,4 +67,7 @@ dependencies {
     //内存泄漏检测工具依赖
     debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.5.4'
     releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4'
+
+    //glide图片加载工具
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
 }

@@ -1,5 +1,6 @@
 package com.wjx.travelwithm_master.ui.activity;
 
+import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.wjx.travelwithm_master.R;
@@ -25,6 +27,7 @@ import com.wjx.travelwithm_master.utils.ToastUtil;
 import java.util.ArrayList;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends SimpleActivity {
@@ -43,12 +46,37 @@ public class MainActivity extends SimpleActivity {
     NavigationView mMainNv;
     @BindView(R.id.main_letter_box)
     ImageButton mMainLetterBox;
+    @BindView(R.id.heard_img_ct)
+    ImageView mHeardImgCt;
+    @BindView(R.id.heard_text_name)
+    TextView mHeardTextName;
+    @BindView(R.id.heard_text_info)
+    TextView mHeardTextInfo;
+    @BindView(R.id.img_bj)
+    ImageView mImgBj;
+    @BindView(R.id.heard_text_mybag)
+    TextView mHeardTextMybag;
+    @BindView(R.id.heard_text_nine)
+    TextView mHeardTextNine;
+    @BindView(R.id.ll_one)
+    LinearLayout mLlOne;
+    @BindView(R.id.view)
+    View mView;
+    @BindView(R.id.ll_one2)
+    LinearLayout mLlOne2;
+    @BindView(R.id.view2)
+    View mView2;
+    @BindView(R.id.ll_one3)
+    LinearLayout mLlOne3;
+    @BindView(R.id.view3)
+    View mView3;
+    @BindView(R.id.ll_one4)
+    LinearLayout mLlOne4;
 
     private int TYPE_HOMEPAGE = 0;
     private int TYPE_WITHM = 1;
     private FragmentManager mManager;
     private ArrayList<BaseFragment> mFragments;
-    private ArrayList<Integer> mTitles;
     private int mPosition;
     private int mHideFragmentm;
 
@@ -151,18 +179,22 @@ public class MainActivity extends SimpleActivity {
         return inflate;
     }
 
-    @OnClick(R.id.main_head_portrait)
+    //toolbar里面图片的点击事件
+    @OnClick({R.id.main_head_portrait, R.id.main_letter_box})
     public void onClick(View v) {
         switch (v.getId()) {
             default:
                 break;
             case R.id.main_head_portrait:
+                //头像的点击事件
                 mMainDl.openDrawer(GravityCompat.START);
                 ToastUtil.showShort("这是一个头像哦！！");
                 break;
             case R.id.main_letter_box:
+                //信箱的点击事件
                 ToastUtil.showShort("这是一个信箱哦！！");
                 break;
         }
     }
+
 }

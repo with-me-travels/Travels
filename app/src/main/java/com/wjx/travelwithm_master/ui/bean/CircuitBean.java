@@ -303,6 +303,49 @@ public class CircuitBean {
             public void setLocation(int location) {
                 this.location = location;
             }
+
+            @Override
+            public String toString() {
+                return "RoutesBean{" +
+                        "id=" + id +
+                        ", cityID=" + cityID +
+                        ", priceInCents=" + priceInCents +
+                        ", title='" + title + '\'' +
+                        ", intro='" + intro + '\'' +
+                        ", cardURL='" + cardURL + '\'' +
+                        ", videoURL='" + videoURL + '\'' +
+                        ", sequence=" + sequence +
+                        ", purchasedTimes=" + purchasedTimes +
+                        ", isNewRoute=" + isNewRoute +
+                        ", isPurchased=" + isPurchased +
+                        ", isCollected=" + isCollected +
+                        ", city='" + city + '\'' +
+                        ", price='" + price + '\'' +
+                        ", type='" + type + '\'' +
+                        ", contentURL='" + contentURL + '\'' +
+                        ", location=" + location +
+                        '}';
+            }
         }
+
+        @Override
+        public String toString() {
+            return "ResultBean{" +
+                    "count=" + count +
+                    ", page=" + page +
+                    ", limit=" + limit +
+                    ", banners=" + banners +
+                    ", routes=" + routes +
+                    '}';
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "CircuitBean{" +
+                "code=" + code +
+                ", desc='" + desc + '\'' +
+                ", result=" + result +
+                '}';
     }
 }
