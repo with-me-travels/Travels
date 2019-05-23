@@ -1,7 +1,6 @@
 package com.wjx.travelwithm_master.ui.activity;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
@@ -204,15 +203,19 @@ public class MainActivity extends SimpleActivity {
         return inflate;
     }
 
-    @OnClick(R.id.main_head_portrait)
+    @OnClick({R.id.main_head_portrait,R.id.main_letter_box})
     public void onClick(View v) {
         switch (v.getId()) {
             default:
                 break;
             case R.id.main_head_portrait:
+                //头像的点击事件
                 mMainDl.openDrawer(GravityCompat.START);
+//                ToastUtil.showShort("这是一个头像哦！！");
                 break;
             case R.id.main_letter_box:
+                Intent intent = new Intent(MainActivity.this,MailboxActivity.class);
+                startActivity(intent);
                 break;
         }
     }

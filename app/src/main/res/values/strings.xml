@@ -51,4 +51,7 @@
     <string name="heard_no_info">快来登陆设置你的个性签名吧</string>
     <string name="setting_info">个性签名</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
