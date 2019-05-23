@@ -1,5 +1,6 @@
 package com.wjx.travelwithm_master.ui.activity;
 
+import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
@@ -7,6 +8,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -74,6 +76,8 @@ public class MainActivity extends SimpleActivity {
 
         //默认添加第一个homepage页面
         addHomePageFragment();
+
+
     }
 
     private void initFragment() {
@@ -151,17 +155,19 @@ public class MainActivity extends SimpleActivity {
         return inflate;
     }
 
-    @OnClick(R.id.main_head_portrait)
+    @OnClick({R.id.main_head_portrait,R.id.main_letter_box})
     public void onClick(View v) {
         switch (v.getId()) {
             default:
                 break;
             case R.id.main_head_portrait:
                 mMainDl.openDrawer(GravityCompat.START);
-                ToastUtil.showShort("这是一个头像哦！！");
+//                ToastUtil.showShort("这是一个头像哦！！");
                 break;
             case R.id.main_letter_box:
-                ToastUtil.showShort("这是一个信箱哦！！");
+//                ToastUtil.showShort("1111111");
+                Intent intent = new Intent(MainActivity.this,MailboxActivity.class);
+                startActivity(intent);
                 break;
         }
     }

@@ -34,4 +34,7 @@
     <string name="fankui">意见反馈</string>
     <string name="banben">版本检查</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
