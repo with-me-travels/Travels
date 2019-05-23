@@ -33,5 +33,22 @@
     <string name="kefu">联系客服</string>
     <string name="fankui">意见反馈</string>
     <string name="banben">版本检查</string>
+    <string name="presonal_toolBar_text">个人信息</string>
+    <string name="presonal_get">获取途径</string>
+    <string name="baomi">保密</string>
+    <string name="my_changes">修改密码</string>
+    <string name="my_setPhone">绑定手机</string>
+    <string name="un_login">退出登陆</string>
+    <string name="my_img_heard">头像</string>
+    <string name="my_name">用户昵称</string>
+    <string name="my_sex">性别</string>
+    <string name="my_info">个性签名</string>
+    <string name="setting_name">修改名称</string>
+    <string name="ok">完成</string>
+    <string name="num">/27</string>
+    <string name="zero">0</string>
+    <string name="heard_no_name">未登录</string>
+    <string name="heard_no_info">快来登陆设置你的个性签名吧</string>
+    <string name="setting_info">个性签名</string>
 
 </resources>

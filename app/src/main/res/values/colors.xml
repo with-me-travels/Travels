@@ -22,4 +22,6 @@
     <color name="c_eaeaea">#eaeaea</color>
     <color name="f0f0f0">#f0f0f0</color>
     <color name="c_FF999999">#FF999999</color>
+    <color name="c_999999">#999999</color>
+    <color name="c_666666">#666666</color>
 </resources>
