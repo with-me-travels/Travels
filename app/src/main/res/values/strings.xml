@@ -33,5 +33,7 @@
     <string name="kefu">联系客服</string>
     <string name="fankui">意见反馈</string>
     <string name="banben">版本检查</string>
+    <string name="banmi_details">伴米详情</string>
+    <string name="guan_zhu">关注</string>
 
 </resources>

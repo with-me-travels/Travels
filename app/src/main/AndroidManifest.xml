@@ -6,6 +6,11 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:name=".base.BaseApp"
@@ -15,22 +20,21 @@
         android:roundIcon="@mipmap/icon_me_kaquan_banmi1"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config"
         tools:ignore="GoogleAppIndexingWarning">
-        <!--启动页-->
+        <activity
+            android:name=".ui.activity.WithMDetailsActivity"
+            android:theme="@style/WithMDetailsTheme" />
+        <!-- 启动页 -->
         <activity
             android:name=".ui.activity.BeginActivity"
-            android:theme="@style/BeginStyle">
-
-        </activity>
-        <!--page页-->
+            android:theme="@style/BeginStyle"></activity> <!-- page页 -->
         <activity
             android:name=".ui.activity.SplashActivity"
-            android:theme="@style/NoAppTheme"></activity>
-
+            android:theme="@style/NoAppTheme" />
         <activity
             android:name=".ui.activity.LoginActivity"
-            android:theme="@style/FullScreen"></activity>
-        <!--主页-->
+            android:theme="@style/FullScreen" /> <!-- 主页 -->
         <activity
             android:name=".ui.activity.MainActivity"
             android:theme="@style/NoAppTheme">
@@ -40,15 +44,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
     </application>
-
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission
-        android:name="android.permission.READ_LOGS"
-        tools:ignore="ProtectedPermissions" />
-
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
 </manifest>

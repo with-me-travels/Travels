@@ -1,8 +1,9 @@
 package com.wjx.travelwithm_master.ui.bean;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class MiListBean {
+public class MiListBean implements Serializable{
 
     /**
      * code : 0
@@ -38,7 +39,7 @@ public class MiListBean {
         this.result = result;
     }
 
-    public static class ResultBean {
+    public static class ResultBean implements Serializable{
         /**
          * page : 1
          * limit : 20
@@ -83,7 +84,7 @@ public class MiListBean {
             this.banmi = banmi;
         }
 
-        public static class BanmiBean {
+        public static class BanmiBean implements Serializable {
             /**
              * id : 57
              * name : 吴晓波
