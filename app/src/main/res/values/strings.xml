@@ -16,4 +16,7 @@
     <string name="agree_protocol">登录或注册即同意伴米旅行</string>
     <string name="agree_user">用户协议</string>
     <string name="login_wechat">微信登录</string>
+    <string name="home_page">首页</string>
+    <string name="with_m">伴米</string>
+    <string name="letter_box">信箱</string>
 </resources>
