@@ -24,7 +24,6 @@ import com.wjx.travelwithm_master.base.SimpleActivity;
 import com.wjx.travelwithm_master.ui.fragment.HomePageFragment;
 import com.wjx.travelwithm_master.ui.fragment.WithMFragment;
 import com.wjx.travelwithm_master.utils.SpUtil;
-import com.wjx.travelwithm_master.utils.ToastUtil;
 
 import java.util.ArrayList;
 
