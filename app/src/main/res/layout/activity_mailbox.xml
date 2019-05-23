@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MailboxActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/maibox_toobar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_70"
+        android:background="@color/colorWhite"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/mailbox_return_iv"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_7"
+                android:layout_marginBottom="@dimen/dp_7"
+                android:src="@mipmap/back_white" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_90">
+
+                <TextView
+                    android:id="@+id/mailbox_tv_notification"
+                    android:layout_width="@dimen/dp_35"
+                    android:layout_height="@dimen/dp_23"
+                    android:gravity="center"
+                    android:text="通知"
+                    android:textColor="@color/mailbox_text_selector"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/mailbox_iv1"
+                    android:layout_width="@dimen/dp_8"
+                    android:layout_height="@dimen/dp_8"
+                    android:layout_alignParentRight="true"
+                    android:src="@color/splash_leftColor" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/dp_35"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp_40">
+
+                <TextView
+                    android:id="@+id/maibox_tv_message"
+                    android:layout_width="@dimen/dp_35"
+                    android:layout_height="@dimen/dp_22"
+                    android:gravity="center"
+                    android:text="消息"
+                    android:textColor="@color/mailbox_text_selector"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/mailbox_iv2"
+                    android:layout_width="@dimen/dp_8"
+                    android:layout_height="@dimen/dp_8"
+                    android:layout_alignParentRight="true"
+                    android:src="@color/splash_leftColor" />
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2"
+        android:background="@color/c_c8c8c8">
+
+        <TextView
+            android:id="@+id/mailbox_posi1"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_150"
+            android:background="@color/c_fa6a13" />
+
+        <TextView
+            android:id="@+id/mailbox_posi2"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_226"
+            android:background="@color/c_fa6a13" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_marginTop="@dimen/dp_5"
+        android:id="@+id/mailbox_fly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
