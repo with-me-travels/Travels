@@ -21,4 +21,8 @@ public interface Constants {
 
     String BEGIN = "isBeain";
     String TOKEN = "isToken";
+
+    // 记住用户名与用户签名
+    String NAME = "name";
+    String INFO = "info";
 }

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textColor"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.activity.PersonalInfomationActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/personal_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/presonal_toolBar_text"
+            android:textColor="@color/textColorB"
+            android:textSize="@dimen/sp_16" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1_5"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@color/f0f0f0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_14"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="@string/presonal_get"
+        android:textColor="@color/c_a9a9a9"
+        android:textSize="@dimen/dp_11" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/dp_335"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_12"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:elevation="@dimen/dp_8"
+        app:cardCornerRadius="@dimen/dp_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_one"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_43"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_56"
+                    android:layout_height="@dimen/dp_17"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/my_img_heard"
+                    android:textColor="@color/textColorB"
+                    android:textSize="@dimen/sp_14" />
+
+                <ImageView
+                    android:id="@+id/my_heard_img"
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_32"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp_215"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:src="@drawable/touxiang" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="@dimen/dp_310"
+                android:layout_height="@dimen/dp_1_5"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:background="@color/f0f0f0" />
+
+            <LinearLayout
+                android:id="@+id/ll_one2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_43"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_56"
+                    android:layout_height="@dimen/dp_17"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/my_name"
+                    android:textColor="@color/textColorB"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/my_heard_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp_205"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/heard_name_demo"
+                    android:textColor="@color/c_FF999999" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="@dimen/dp_310"
+                android:layout_height="@dimen/dp_1_5"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:background="@color/f0f0f0" />
+
+            <LinearLayout
+                android:id="@+id/ll_one3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_43"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_56"
+                    android:layout_height="@dimen/dp_17"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/my_sex"
+                    android:textColor="@color/textColorB"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/my_heard_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp_217"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/baomi"
+                    android:textColor="@color/c_FF999999" />
+
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="@dimen/dp_310"
+                android:layout_height="@dimen/dp_1_5"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:background="@color/f0f0f0" />
+
+            <LinearLayout
+                android:id="@+id/ll_one4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_43"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="@dimen/dp_56"
+                    android:layout_height="@dimen/dp_17"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/my_info"
+                    android:textColor="@color/textColorB"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/my_heard_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp_133"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:maxLength="8"
+                    android:text="@string/heard_info_demo"
+                    android:textColor="@color/c_FF999999" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_19" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/dp_335"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_12"
+        android:layout_marginTop="@dimen/dp_25"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:elevation="@dimen/dp_8"
+        app:cardCornerRadius="@dimen/dp_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_43"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/my_heard_changes"
+                    android:layout_width="@dimen/dp_56"
+                    android:layout_height="@dimen/dp_17"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/my_changes"
+                    android:textColor="@color/textColorB"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/dp_310"
+                android:layout_height="@dimen/dp_1_5"
+                android:layout_marginStart="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_marginEnd="@dimen/dp_10"
+                android:background="@color/f0f0f0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_43"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/my_heard_setPhone"
+                    android:layout_width="@dimen/dp_56"
+                    android:layout_height="@dimen/dp_17"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dp_12"
+                    android:layout_marginTop="@dimen/dp_8"
+                    android:text="@string/my_setPhone"
+                    android:textColor="@color/textColorB"
+                    android:textSize="@dimen/sp_14" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_19" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/backAll"
+        android:layout_width="@dimen/dp_335"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_28"
+        android:background="@drawable/splash_btn_bg2"
+        android:gravity="center"
+        android:text="@string/un_login"
+        android:textColor="@color/textColor" />
+
+
+</LinearLayout>

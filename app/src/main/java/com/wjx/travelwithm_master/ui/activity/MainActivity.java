@@ -1,5 +1,6 @@
 package com.wjx.travelwithm_master.ui.activity;
 
+import android.content.Intent;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
@@ -12,19 +13,22 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.wjx.travelwithm_master.R;
 import com.wjx.travelwithm_master.base.BaseApp;
 import com.wjx.travelwithm_master.base.BaseFragment;
+import com.wjx.travelwithm_master.base.Constants;
 import com.wjx.travelwithm_master.base.SimpleActivity;
 import com.wjx.travelwithm_master.ui.fragment.HomePageFragment;
 import com.wjx.travelwithm_master.ui.fragment.WithMFragment;
-import com.wjx.travelwithm_master.utils.ToastUtil;
+import com.wjx.travelwithm_master.utils.SpUtil;
 
 import java.util.ArrayList;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends SimpleActivity {
@@ -43,6 +47,15 @@ public class MainActivity extends SimpleActivity {
     NavigationView mMainNv;
     @BindView(R.id.main_letter_box)
     ImageButton mMainLetterBox;
+    @BindView(R.id.heard_Personal_Infomation)
+    RelativeLayout relativeLayout;
+    @BindView(R.id.heard_img_ct)
+    ImageView mHeardImgCt;
+    @BindView(R.id.heard_text_name)
+    TextView mHeardTextName;
+    @BindView(R.id.heard_text_info)
+    TextView mHeardTextInfo;
+
 
     private int TYPE_HOMEPAGE = 0;
     private int TYPE_WITHM = 1;
@@ -62,6 +75,17 @@ public class MainActivity extends SimpleActivity {
         //Tablayout
         tab();
 
+        String name = (String) SpUtil.getParam(Constants.NAME, "");
+        mHeardTextName.setText(name);
+
+        if (name.equals("未登录")) {
+            mHeardTextInfo.setText("快来登陆设置你的个性签名吧");
+        }else {
+            String info = (String) SpUtil.getParam(Constants.INFO, "");
+            mHeardTextInfo.setText(info);
+        }
+
+
         //获取布局管理器
         mManager = getSupportFragmentManager();
 
@@ -74,8 +98,6 @@ public class MainActivity extends SimpleActivity {
 
         //默认添加第一个homepage页面
         addHomePageFragment();
-
-
     }
 
     private void initFragment() {
@@ -92,6 +114,33 @@ public class MainActivity extends SimpleActivity {
 
     @Override
     protected void initListener() {
+
+        // Tab栏点击事件
+        TabListener();
+
+        // 编辑个人信息 ---> 跳转到编辑个人信息界面
+        RelativeListener();
+
+    }
+
+    private void RelativeListener() {
+        relativeLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                // 获取当前信息
+                String heardName = mHeardTextName.getText().toString();
+                String heardInfo = mHeardTextInfo.getText().toString();
+                // 点击跳转到编辑个人资料界面
+                SpUtil.setParam(Constants.NAME, heardName);
+                SpUtil.setParam(Constants.INFO, heardInfo);
+                startActivity(new Intent(MainActivity.this, PersonalInfomationActivity.class));
+
+            }
+        });
+    }
+
+    private void TabListener() {
         mMainTab.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
 
             @Override
@@ -153,18 +202,21 @@ public class MainActivity extends SimpleActivity {
         return inflate;
     }
 
-    @OnClick(R.id.main_head_portrait)
+    @OnClick({R.id.main_head_portrait,R.id.main_letter_box})
     public void onClick(View v) {
         switch (v.getId()) {
             default:
                 break;
             case R.id.main_head_portrait:
+                //头像的点击事件
                 mMainDl.openDrawer(GravityCompat.START);
-                ToastUtil.showShort("这是一个头像哦！！");
+//                ToastUtil.showShort("这是一个头像哦！！");
                 break;
             case R.id.main_letter_box:
-                ToastUtil.showShort("这是一个信箱哦！！");
+                Intent intent = new Intent(MainActivity.this,MailboxActivity.class);
+                startActivity(intent);
                 break;
         }
     }
+
 }

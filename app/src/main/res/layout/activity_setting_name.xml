@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SettingNameActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/setting_name_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setting_name"
+            android:textColor="@color/textColorB"
+            android:textSize="@dimen/sp_16" />
+        
+        <TextView
+            android:id="@+id/setting_name_ok"
+            android:text="@string/ok"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textColor="@color/c_fa6a13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1_5"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp_10"
+        android:background="@color/f0f0f0" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp_340"
+        android:layout_height="@dimen/dp_130"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_20"
+        android:padding="@dimen/dp_14"
+        android:background="@drawable/setting_background">
+
+        <EditText
+            android:maxLength="27"
+            android:textColor="@color/c_999999"
+            android:textSize="@dimen/dp_14"
+            android:id="@+id/setting_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_background" />
+
+        <TextView
+            android:id="@+id/setting_name_zero"
+            android:text="@string/zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/tv_num"/>
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:text="@string/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
