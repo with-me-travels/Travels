@@ -9,6 +9,8 @@
     <string name="splash_immediately">立即体验</string>
     <string name="for_more_service">你好，为了获取更好的服务</string>
     <string name="login_app">请登录伴米旅行</string>
+    <string name="login_verify">请输入验证码</string>
+    <string name="login_bind">请绑定手机号</string>
     <string name="contry_code">+86</string>
     <string name="input_phone">请输入手机号码</string>
     <string name="or">or</string>
@@ -16,6 +18,11 @@
     <string name="agree_protocol">登录或注册即同意伴米旅行</string>
     <string name="agree_user">用户协议</string>
     <string name="login_wechat">微信登录</string>
+    <string name="for_more_wechat">为了您的账号安全</string>
+    <string name="verify_state">请稍后...</string>
+    <string name="verify_send">重新发送</string>
+    <string name="login_success">登录成功</string>
+    <string name="verify_error">登录失败</string>
     <string name="home_page">首页</string>
     <string name="with_m">伴米</string>
     <string name="letter_box">信箱</string>
