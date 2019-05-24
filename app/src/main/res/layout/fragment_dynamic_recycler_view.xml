@@ -16,41 +16,47 @@
 
         <ImageView
             android:id="@+id/dynamic_img"
+            android:scaleType="fitXY"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
         <RelativeLayout
-            android:background="@color/colorWhite"
+            android:id="@+id/dynamic_rl"
+            android:background="@color/colorWhite_Dynamic"
             android:layout_width="@dimen/dp_335"
             android:layout_height="@dimen/dp_116">
 
             <TextView
                 android:id="@+id/dynamic_city"
+                android:textColor="@color/colorWhite"
                 android:layout_marginTop="@dimen/dp_12"
                 android:layout_marginLeft="@dimen/dp_15"
-                android:layout_width="@dimen/dp_30"
-                android:layout_height="@dimen/dp_12" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/dynamic_title"
+                android:textColor="@color/colorWhite"
                 android:layout_marginTop="@dimen/dp_32"
                 android:layout_marginLeft="@dimen/dp_15"
-                android:layout_width="@dimen/dp_55"
-                android:layout_height="@dimen/dp_37" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
             <TextView
                 android:id="@+id/dynamic_intro"
-                android:layout_marginTop="@dimen/dp_69"
-                android:layout_marginLeft="@dimen/dp_15"
                 android:layout_width="wrap_content"
-                android:layout_height="@dimen/dp_25" />
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_15"
+                android:layout_marginTop="@dimen/dp_69"
+                android:textColor="@color/colorWhite" />
 
             <Button
                 android:id="@+id/dynamic_price"
+                android:textColor="@color/colorWhite"
                 android:layout_marginLeft="@dimen/dp_246"
                 android:layout_marginRight="@dimen/dp_15"
                 android:layout_alignParentRight="true"
-                android:background="@drawable/btn_me"
+                android:background="@drawable/dynamic_btn_shape"
                 android:layout_marginTop="@dimen/dp_32"
                 android:layout_width="@dimen/dp_74"
                 android:layout_height="@dimen/dp_29" />

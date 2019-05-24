@@ -4,6 +4,7 @@ package com.wjx.travelwithm_master.ui.api;
 
 import com.wjx.travelwithm_master.ui.bean.CircuitBean;
 import com.wjx.travelwithm_master.ui.bean.LoginBean;
+import com.wjx.travelwithm_master.ui.bean.MiDynamicBean;
 import com.wjx.travelwithm_master.ui.bean.MiListBean;
 
 import io.reactivex.Observable;
@@ -13,6 +14,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.Headers;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 public interface ApiService {
@@ -44,5 +46,12 @@ public interface ApiService {
     @GET("api/3.0/banmi")
     Observable<MiListBean> getMiListData(@Query("page") int page, @Header("banmi-app-token") String header);
 
+    /**
+     * 伴米动态
+     * 参数：page，页码，banmiId 伴米Id
+     * banmi-app-token:登录后的token(请求头)
+     */
+    @GET("api/3.0/banmi/{banmiId}/routes")
+    Observable<MiDynamicBean> getMiDynamicData(@Path("banmiId") String banmiId,@Query("page") int page,@Header("banmi-app-token") String header);
 
 }

@@ -3,6 +3,7 @@ package com.wjx.travelwithm_master.ui.activity;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -51,6 +52,7 @@ public class WithMDetailsActivity extends BaseActivity<EmptyView, EmptyPresenter
     private FragmentManager sFm;
     private DynamicFragment dynamicFragment;
     private LineFragment lineFragment;
+    private int banmiId;
 
     @Override
     protected void initView() {
@@ -65,6 +67,7 @@ public class WithMDetailsActivity extends BaseActivity<EmptyView, EmptyPresenter
         MiListBean.ResultBean.BanmiBean banmiBeans = (MiListBean.ResultBean.BanmiBean) intent.getSerializableExtra("banmiBeans");
 
         if (banmiBeans != null) {
+            banmiId = banmiBeans.getId();
             Glide.with(this).load(banmiBeans.getPhoto()).into(mBanxiang_Banphoto);
             mBanxiang_Bantitle.setText(banmiBeans.getName());
             mBanxiang_Location.setText(banmiBeans.getLocation());
@@ -78,13 +81,17 @@ public class WithMDetailsActivity extends BaseActivity<EmptyView, EmptyPresenter
                 setIndicator(mBanxiang_tab,30,30);
             }
         });*/
-        mBanxiang_tab.addTab(mBanxiang_tab.newTab().setText("动态"));
         mBanxiang_tab.addTab(mBanxiang_tab.newTab().setText("线路"));
+        mBanxiang_tab.addTab(mBanxiang_tab.newTab().setText("动态"));
 
         sFm = getSupportFragmentManager();
         FragmentTransaction fTran = sFm.beginTransaction();
+        Bundle bundle = new Bundle();
+        bundle.putInt("banmiId",banmiId);
         dynamicFragment = new DynamicFragment();
         lineFragment = new LineFragment();
+        dynamicFragment.setArguments(bundle);
+        lineFragment.setArguments(bundle);
         fTran.add(R.id.banxiang_frag, dynamicFragment);
         fTran.add(R.id.banxiang_frag, lineFragment);
         fTran.hide(lineFragment);
