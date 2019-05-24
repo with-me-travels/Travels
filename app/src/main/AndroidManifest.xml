@@ -56,16 +56,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--page页-->
-        <activity android:name=".ui.activity.SplashActivity"
-            android:theme="@style/FullScreen"></activity>
 
-        <activity android:name=".ui.activity.LoginActivity"
-            android:theme="@style/FullScreen"></activity>
         <activity android:name=".ui.activity.VerifyActivity"
             android:theme="@style/FullScreen"></activity>
-        <!--主页-->
-        <activity android:name=".ui.activity.MainActivity"></activity>
+
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
