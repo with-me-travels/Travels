@@ -22,13 +22,20 @@
         android:theme="@style/AppTheme"
         android:networkSecurityConfig="@xml/network_security_config"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ui.activity.BoxContentActivity"
+            android:theme="@style/NoAppTheme"
+            ></activity>
+        <!-- 消息页面 -->
+        <activity
+            android:name=".ui.activity.MailboxActivity"
+            android:theme="@style/NoAppTheme" /> <!-- 启动页 -->
         <activity
             android:name=".ui.activity.WithMDetailsActivity"
             android:theme="@style/WithMDetailsTheme" />
         <!-- 启动页 -->
         <activity
             android:name=".ui.activity.BeginActivity"
-            android:theme="@style/BeginStyle"></activity> <!-- page页 -->
+            android:theme="@style/BeginStyle" /> <!-- page页 -->
         <activity
             android:name=".ui.activity.SplashActivity"
             android:theme="@style/NoAppTheme" />

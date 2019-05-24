@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swmenulayout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_83"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingBottom="1dp"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/nation_rl"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/nation_item_iv"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_8"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@color/c_FA6A13" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_marginBottom="@dimen/dp_8"
+            android:layout_toRightOf="@id/nation_item_iv"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nation_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最新新闻"
+                android:textColor="@color/c_FA6A13"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/nation_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_1"
+                android:background="?android:attr/selectableItemBackground"
+                android:text="2018/05/21"
+                android:textColor="@color/c_999999"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:id="@+id/nation_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:text="少时诵诗书回复了你"
+                android:textColor="@color/c_636363"
+                android:textSize="@dimen/sp_16" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/natione_delete"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="match_parent"
+        android:background="@color/c_FA6A13"
+        android:text="删除"
+        android:textColor="@color/colorWhite" />
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

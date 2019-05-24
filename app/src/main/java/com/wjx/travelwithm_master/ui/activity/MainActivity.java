@@ -74,6 +74,8 @@ public class MainActivity extends SimpleActivity {
 
         //默认添加第一个homepage页面
         addHomePageFragment();
+
+
     }
 
     private void initFragment() {
