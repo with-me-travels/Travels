@@ -10,12 +10,11 @@ import com.wjx.travelwithm_master.utils.net.RxUtils;
 
 import io.reactivex.disposables.Disposable;
 
-
 public class DynamicModel extends BaseModel {
 
-    public void requestDynamicData(final ResultCallBack<MiDynamicBean> resultCallBack,String banmiId,int page,String header){
-        ApiService apiserver = HttpUtils.getInstance().getApiserver(ApiService.banmiUrl, ApiService.class);
-        apiserver.getMiDynamicData(banmiId,page,header)
+    public void requestDynamicData(final ResultCallBack<MiDynamicBean> miDynamicBeanResultCallBack, String id, int page, String header){
+        HttpUtils.getInstance().getApiserver(ApiService.banmiUrl,ApiService.class)
+                .getMiDynamicData(id,page,header)
                 .compose(RxUtils.<MiDynamicBean>rxObserableSchedulerHelper())
                 .subscribe(new BaseObserver<MiDynamicBean>() {
                     @Override
@@ -25,7 +24,7 @@ public class DynamicModel extends BaseModel {
 
                     @Override
                     public void onNext(MiDynamicBean miDynamicBean) {
-                        resultCallBack.onSuccess(miDynamicBean);
+                        miDynamicBeanResultCallBack.onSuccess(miDynamicBean);
                     }
                 });
     }

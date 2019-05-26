@@ -15,17 +15,17 @@ public class DynamicPresenter<V extends DynamicView> extends BasePresenter<Dynam
         mModels.add(dynamicModel);
     }
 
-    public void getDynamicModelData(String banmiId,int page,String header){
+    public void getMoudelRequestData(String id, int page, String header){
         dynamicModel.requestDynamicData(new ResultCallBack<MiDynamicBean>() {
             @Override
             public void onSuccess(MiDynamicBean bean) {
-                mView.requestDynamicData(bean);
+                mView.requestMiDynamicSuccess(bean);
             }
 
             @Override
             public void onFail(String msg) {
                 mView.requestFailed(msg);
             }
-        },banmiId,page,header);
+        },id,page,header);
     }
 }

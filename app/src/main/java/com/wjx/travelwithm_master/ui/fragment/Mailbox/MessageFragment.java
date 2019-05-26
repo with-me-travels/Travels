@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.wjx.travelwithm_master.R;
-import com.wjx.travelwithm_master.adapter.NationAdapter;
+import com.wjx.travelwithm_master.adapters.NationAdapter;
 import com.wjx.travelwithm_master.ui.bean.NationBean;
 
 import java.util.ArrayList;

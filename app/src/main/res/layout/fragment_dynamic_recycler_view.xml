@@ -1,68 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginLeft="@dimen/dp_20"
-    android:layout_marginTop="@dimen/dp_15"
-    android:layout_marginRight="@dimen/dp_20"
-    app:cardCornerRadius="@dimen/dp_8"
-    app:cardMaxElevation="@dimen/dp_8"
-    app:cardUseCompatPadding="true">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <RelativeLayout
-        android:layout_width="@dimen/dp_335"
-        android:layout_height="@dimen/dp_410">
+    <ImageView
+        android:id="@+id/bg_round"
+        android:layout_marginTop="@dimen/dp_5"
+        android:background="@mipmap/round"
+        android:layout_width="@dimen/dp_8"
+        android:layout_height="@dimen/dp_8" />
 
-        <ImageView
-            android:id="@+id/dynamic_img"
-            android:scaleType="fitXY"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/bg_line"
+        android:layout_below="@id/bg_round"
+        android:layout_marginBottom="@dimen/dp_3"
+        android:layout_marginLeft="@dimen/dp_3"
+        android:layout_marginTop="@dimen/dp_3"
+        android:background="@mipmap/line"
+        android:layout_width="3dp"
+        android:layout_height="@dimen/dp_375" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_toRightOf="@id/bg_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/upload"
+        android:layout_below="@id/date"
+        android:text="发表一条动态"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/dp_17"
+        android:layout_toRightOf="@id/bg_line"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.CardView
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_toRightOf="@id/bg_line"
+        android:layout_below="@id/upload"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/dp_10"
+        app:cardUseCompatPadding="true"
+        android:padding="@dimen/dp_5"
+        >
 
         <RelativeLayout
-            android:id="@+id/dynamic_rl"
-            android:background="@color/colorWhite_Dynamic"
-            android:layout_width="@dimen/dp_335"
-            android:layout_height="@dimen/dp_116">
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_315">
 
             <TextView
-                android:id="@+id/dynamic_city"
-                android:textColor="@color/colorWhite"
-                android:layout_marginTop="@dimen/dp_12"
-                android:layout_marginLeft="@dimen/dp_15"
+                android:id="@+id/title"
+                android:text="这里是标题"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_10"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/dp_20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/dynamic_title"
-                android:textColor="@color/colorWhite"
-                android:layout_marginTop="@dimen/dp_32"
-                android:layout_marginLeft="@dimen/dp_15"
+                android:id="@+id/content"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_15"
+                android:textSize="@dimen/dp_17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/dynamic_intro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/dp_15"
-                android:layout_marginTop="@dimen/dp_69"
-                android:textColor="@color/colorWhite" />
-
-            <Button
-                android:id="@+id/dynamic_price"
-                android:textColor="@color/colorWhite"
-                android:layout_marginLeft="@dimen/dp_246"
-                android:layout_marginRight="@dimen/dp_15"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/dynamic_btn_shape"
-                android:layout_marginTop="@dimen/dp_32"
-                android:layout_width="@dimen/dp_74"
-                android:layout_height="@dimen/dp_29" />
+            <ImageView
+                android:id="@+id/img"
+                android:scaleType="fitXY"
+                android:layout_below="@id/content"
+                android:layout_marginTop="@dimen/dp_15"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_width="@dimen/dp_300"
+                android:layout_centerHorizontal="true"
+                android:layout_height="@dimen/dp_131" />
 
         </RelativeLayout>
 
-    </RelativeLayout>
+    </android.support.v7.widget.CardView>
 
-</android.support.v7.widget.CardView>
+</RelativeLayout>

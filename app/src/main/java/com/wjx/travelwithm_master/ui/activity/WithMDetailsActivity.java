@@ -19,8 +19,8 @@ import com.wjx.travelwithm_master.R;
 import com.wjx.travelwithm_master.base.BaseActivity;
 import com.wjx.travelwithm_master.presenter.EmptyPresenter;
 import com.wjx.travelwithm_master.ui.bean.MiListBean;
-import com.wjx.travelwithm_master.ui.fragment.DynamicFragment;
 import com.wjx.travelwithm_master.ui.fragment.LineFragment;
+import com.wjx.travelwithm_master.ui.fragment.DynamicFragment;
 import com.wjx.travelwithm_master.view.EmptyView;
 
 import java.lang.reflect.Field;
@@ -50,8 +50,8 @@ public class WithMDetailsActivity extends BaseActivity<EmptyView, EmptyPresenter
     @BindView(R.id.banxiang_tab)
     TabLayout mBanxiang_tab;
     private FragmentManager sFm;
-    private DynamicFragment dynamicFragment;
-    private LineFragment lineFragment;
+    private LineFragment dynamicFragment;
+    private DynamicFragment lineFragment;
     private int banmiId;
 
     @Override
@@ -88,12 +88,12 @@ public class WithMDetailsActivity extends BaseActivity<EmptyView, EmptyPresenter
         FragmentTransaction fTran = sFm.beginTransaction();
         Bundle bundle = new Bundle();
         bundle.putInt("banmiId",banmiId);
-        dynamicFragment = new DynamicFragment();
-        lineFragment = new LineFragment();
+        dynamicFragment = new LineFragment();
+        lineFragment = new DynamicFragment();
         dynamicFragment.setArguments(bundle);
         lineFragment.setArguments(bundle);
-        fTran.add(R.id.banxiang_frag, dynamicFragment);
         fTran.add(R.id.banxiang_frag, lineFragment);
+        fTran.add(R.id.banxiang_frag, dynamicFragment);
         fTran.hide(lineFragment);
         fTran.commit();
     }

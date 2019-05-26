@@ -1,4 +1,4 @@
-package com.wjx.travelwithm_master.adapter;
+package com.wjx.travelwithm_master.adapters;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

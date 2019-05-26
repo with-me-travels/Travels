@@ -33,4 +33,5 @@
     <color name="c_FCEEE3">#FCEEE3</color>
     <color name="c_99ffffff">#99FFFFFF</color>
     <color name="colorWhite_Dynamic">#C4FFFFFF</color>
+    <color name="colorBlack">#000000</color>
 </resources>

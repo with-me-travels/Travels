@@ -9,7 +9,7 @@ import android.widget.TextView;
 
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.wjx.travelwithm_master.R;
-import com.wjx.travelwithm_master.adapter.HomePageAdapter;
+import com.wjx.travelwithm_master.adapters.HomePageAdapter;
 import com.wjx.travelwithm_master.base.BaseApp;
 import com.wjx.travelwithm_master.base.BaseFragment;
 import com.wjx.travelwithm_master.presenter.HomePagePresenter;

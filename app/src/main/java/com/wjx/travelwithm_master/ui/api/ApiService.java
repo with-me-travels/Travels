@@ -5,10 +5,10 @@ package com.wjx.travelwithm_master.ui.api;
 import com.wjx.travelwithm_master.ui.bean.CircuitBean;
 import com.wjx.travelwithm_master.ui.bean.LoginBean;
 import com.wjx.travelwithm_master.ui.bean.MiDynamicBean;
+import com.wjx.travelwithm_master.ui.bean.MiLineBean;
 import com.wjx.travelwithm_master.ui.bean.MiListBean;
 
 import io.reactivex.Observable;
-import io.reactivex.Observer;
 import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
@@ -47,11 +47,17 @@ public interface ApiService {
     Observable<MiListBean> getMiListData(@Query("page") int page, @Header("banmi-app-token") String header);
 
     /**
-     * 伴米动态
+     * 伴米线路
      * 参数：page，页码，banmiId 伴米Id
      * banmi-app-token:登录后的token(请求头)
      */
     @GET("api/3.0/banmi/{banmiId}/routes")
+    Observable<MiLineBean> getMiLineData(@Path("banmiId") String banmiId, @Query("page") int page, @Header("banmi-app-token") String header);
+
+    /**
+     * 伴米动态
+     */
+    @GET("api/3.0/banmi/{banmiId}")
     Observable<MiDynamicBean> getMiDynamicData(@Path("banmiId") String banmiId,@Query("page") int page,@Header("banmi-app-token") String header);
 
 }

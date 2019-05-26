@@ -1,4 +1,4 @@
-package com.wjx.travelwithm_master.adapter;
+package com.wjx.travelwithm_master.adapters;
 
 import android.content.Context;
 import android.content.Intent;
@@ -100,6 +100,5 @@ public class NationAdapter extends RecyclerView.Adapter {
             this.mSwmenulayout = (SwipeMenuLayout) rootView.findViewById(R.id.swmenulayout);
             this.mNationrl = (RelativeLayout) rootView.findViewById(R.id.nation_rl);
         }
-
     }
 }
